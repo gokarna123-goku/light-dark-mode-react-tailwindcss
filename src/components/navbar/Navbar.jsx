@@ -2,6 +2,7 @@ import React from 'react';
 import { FaBars, FaPhone } from 'react-icons/fa6';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
+import ThemeToggle from '../theme/ThemeToggle';
 // import ThemeSwitcher from '../theme/ThemeSwitcher';
 
 
@@ -22,6 +23,7 @@ const Navbar = () => {
     const handleClose = () => {
         setOpen(false);
     };
+
 
     return (
         <nav className='w-full h-[8ch] bg-neutral-100 dark:bg-neutral-900 flex items-center md:flex-row lg:px-28 md:px-16 sm:px-7 px-4 fixed top-0 z-50'>
@@ -63,7 +65,7 @@ const Navbar = () => {
                         Get Started
                     </button>
 
-                    {/* <ThemeSwitcher /> */}
+                    <ThemeToggle />
                 </div>
             </div>
         </nav>

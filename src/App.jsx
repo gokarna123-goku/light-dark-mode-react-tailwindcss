@@ -2,6 +2,8 @@ import { BrowserRouter as Router } from "react-router-dom"
 import Navbar from "./components/navbar/Navbar"
 import Home from "./pages/home/Home"
 import About from "./pages/about/About"
+import Services from "./pages/services/Services"
+import Portfolio from "./pages/portfolio/Portfolio"
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
           <Navbar />
           <Home />
           <About />
+          <Services />
+          <Portfolio />
         </div>
       </Router>
     </>
